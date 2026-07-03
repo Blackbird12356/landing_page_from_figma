@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Подключение шрифтов */
+@font-face {
+  font-family: '20 Kopeek';
+  src: local('20 Kopeek'), url('/fonts/20Kopeek-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: '20 Kopeek Book';
+  src: local('20 Kopeek Book'), url('/fonts/20Kopeek-Book.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans text-body-desk text-brand-black antialiased bg-white;
+  }
+}
+
+@layer components {
+  .container-site {
+    @apply mx-auto w-full max-w-content px-5 sm:px-8 lg:px-0;
+  }
+
+  .btn {
+    @apply inline-flex items-center justify-center rounded-pill px-[47px] py-[23px] text-body-desk transition-colors duration-200;
+  }
+  .btn-outline-dark {
+    @apply btn border border-brand-black bg-transparent text-brand-black hover:bg-brand-black/5;
+  }
+  .btn-primary {
+    @apply btn bg-brand-blue text-white hover:bg-brand-blue/90;
+  }
+
+  .section-heading {
+    @apply font-book text-h2-desk text-brand-black;
+  }
+  .section-heading-lg {
+    @apply font-book text-[34px] leading-[1.1] text-brand-black sm:text-h1-desk;
+  }
+  .form-input {
+    @apply h-[71px] w-full rounded-form border border-brand-black bg-white px-6 text-body-desk text-brand-black placeholder:text-brand-grey focus:border-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/20;
+  }
+  .comparison-row {
+    @apply border-b border-brand-grey/50 py-6;
+  }
+}
+
+/* ==========================================
+   АДАПТИВКА И СЕТКА ДЛЯ ТАБЛИЦЫ СРАВНЕНИЯ
+   ========================================== */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.compare-wrapper {
+  display: grid;
+  min-width: 700px;
+  grid-template-columns: 160px 1fr 1fr 1fr;
+  column-gap: 1.5rem;
+  grid-template-rows: auto auto auto auto auto auto;
+}
+@media (min-width: 1024px) {
+  .compare-wrapper {
+    min-width: 0;
+  }
+}
+.compare-col {
+  display: grid;
+  grid-row: span 6;
+  grid-template-rows: subgrid;
+}
