@@ -1,16 +1,43 @@
-# React + Vite
+# FREE.creative - B2B Agency Landing Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern, responsive, and pixel-perfect landing page for a creative agency. Originally a static design, this project was architected and built as a fully scalable React application to demonstrate high-quality frontend development and strict layout control.
 
-Currently, two official plugins are available:
+🔗 **Live Demo:** [https://landingpagefromfigma.vercel.app/](https://landingpagefromfigma.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🚀 Tech Stack
 
-## React Compiler
+* **Frontend Library:** React (Functional Components)
+* **Build Tool:** Vite (for lightning-fast compilation and optimized production builds)
+* **Styling:** Tailwind CSS (Utility-first framework)
+* **Layouting:** Modern CSS Grid & Flexbox
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Key Features & Engineering Approach
 
-## Expanding the Oxlint configuration
+* **Pixel-Perfect Implementation:** Meticulously translated from Figma designs with strict attention to typography, spacing, and visual hierarchy.
+* **Advanced CSS Grid Architectures:** Solved complex UI challenges—such as the synchronized multi-column comparison table—utilizing a robust "Flat Grid" (`subgrid` fallback) architecture to ensure perfect horizontal alignment across varying text lengths.
+* **Fully Responsive:** Fluid adaptation for all breakpoints (Mobile, Tablet, Desktop) providing a seamless, app-like user experience (including custom horizontal swiping without native scrollbars on mobile devices).
+* **Component-Based Structure:** Clean, modular, and DRY codebase designed for easy maintenance, readability, and future scalability.
+* **Quality Assurance Tested:** Rigorously tested for cross-browser compatibility, UI consistency, and responsive behavior across different screen sizes.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## 📦 Getting Started
+
+To run this project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/your-username/landing_page_from_figma.git](https://github.com/your-username/landing_page_from_figma.git)
+2. Navigate to the project directory:
+    Bash
+    cd free-creative-app
+3.Install dependencies:
+  Bash
+  npm install
+4.Start the local development server:
+  Bash
+  npm run dev
+
+👤 Author
+Ramazan Shabalin
+Software Developer & Quality Assurance Engineer Candidate
+GitHub: https://github.com/Blackbird12356
+LinkedIn: in/ramazan-shabalin-781762375
